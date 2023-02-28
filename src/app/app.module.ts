@@ -6,11 +6,17 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ModalsmgPage } from './modalsmg/modalsmg.page';
+import { HttpsService } from 'src/services/https/https.service';
+import { HTTP } from '@ionic-native/http/ngx';
+import { HttpClientModule } from '@angular/common/http';
+import { Storage } from '@ionic/storage';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  declarations: [AppComponent, ModalsmgPage],
+  entryComponents: [ ModalsmgPage ],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule ],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, HttpsService, HTTP, Storage],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

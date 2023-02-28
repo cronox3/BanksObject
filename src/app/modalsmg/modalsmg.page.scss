@@ -1,0 +1,38 @@
+.titlemodal {
+    font-size: 20px;
+    line-height: 24px;
+    color: #002453;
+    font-weight: normal;
+    font-family: 'AvenirBlack', sans-serif;
+    text-align: center;
+}
+
+.contentmodal {
+    font-size: 15px;
+    line-height: 16px;
+    color: #002453;
+    font-family: 'AvenirBook', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer-md:before {
+    background-image: unset!important;
+}
+
+.closeModal {
+    float: right;
+    border: solid 0px;
+    border-radius: 19px;
+    width: 36px;
+    height: 37px;
+    text-align: center;
+}
+
+.size-iconmd {
+    font-size: 35px;
+}
+
+.podboton {
+    margin-bottom: 4%;
+}

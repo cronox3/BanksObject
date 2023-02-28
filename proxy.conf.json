@@ -1,0 +1,7 @@
+{
+    "catom/*": {
+        "target": "https://dev.obtenmas.com/",
+        "secure": false,
+        "changeOrigin": true
+    }
+}

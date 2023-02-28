@@ -11,6 +11,8 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  { path: 'modalsmg', loadChildren: () => import('./modalsmg/modalsmg.module').then( m => m.ModalsmgPageModule) },
+
 ];
 
 @NgModule({

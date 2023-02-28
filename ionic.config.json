@@ -1,7 +1,14 @@
 {
-  "name": "BanksObject",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
+    "name": "BanksObject",
+    "integrations": {
+        "capacitor": {
+            "enabled": false
+        },
+        "cordova": {}
+    },
+    "type": "angular",
+    "proxies": [{
+        "path": "/catom",
+        "proxyUrl": "https://dev.obtenmas.com/"
+    }]
 }
