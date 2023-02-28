@@ -1,0 +1,7 @@
+{
+  "name": "BanksObject",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
